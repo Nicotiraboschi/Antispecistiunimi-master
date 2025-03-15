@@ -1,0 +1,386 @@
+@media(max-width:811px) {
+  .none{
+    display:block
+  }
+  .bigger{
+display:none;
+  }
+  .smaller{
+    display:block;
+  }
+  #main-nav {
+    .navbar {
+      flex-direction: column;
+      padding:0;
+      justify-content: center;
+      align-items: center;
+      .logo {
+      width: 3rem;
+      }
+    ul {
+      margin:0;
+      padding: 0;
+    }
+    li {
+      padding: 0rem;
+      a {
+        font-size: 1.5rem;
+      }
+    }
+    .social {
+      padding-top:1rem;
+    }
+  }
+} 
+
+//header
+#main-header {
+  height: 35rem;
+  overflow:hidden;
+ background:$main-color;
+
+  .showcase {
+    padding-top:3rem;
+    background: $main-img no-repeat center center/cover;
+    height: 20rem;
+    width:100%;
+  }
+
+}
+
+.section {
+  .section-container{
+    .section-content{
+      h2{font-size:3rem;}
+      p{
+        font-size:1.5rem;
+      }
+    }
+  }
+}
+
+.article .showcase-article{
+  h1{
+    font-size:2rem;
+  }
+  p{
+    padding:0;
+  }
+}
+.article-container div:nth-child(2) {
+  img {height: 20vh;}
+}
+
+
+
+.social-container{
+  grid-template-columns: repeat(1,1fr);
+ .section.section-social{
+  .section-container {
+   .section-content {
+    padding-top:2rem;
+     h2{font-size:2rem;}
+     p{font-size:1.2rem;
+     }
+   a{font-size:1.2rem;
+    }
+    img{
+      max-width:60%;
+    }    
+  }
+  }
+  } 
+  .youtube{background:$main-color}
+   .spotify{background:$secondary-color}
+   .whatsapp{background:$secondary-color !important}
+   .instagram{background:$main-color !important}
+}
+
+//showcase
+.showcase-article {
+  height: 30vh;
+}
+
+//contatti
+#contatti 
+form{
+  padding: 0 2rem;
+}
+
+    #contact-b .contact-info{
+  h3{font-size:2rem;}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+  .smaller{
+    display:block;
+  }
+  .bigger{
+    display:none;
+      }
+
+
+  #main-nav {
+    .navbar {
+      flex-direction: column;
+      padding:1rem 0 0rem 0;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        width: 3rem;
+        padding-bottom:0.5rem;
+      }
+    ul {
+      margin:0;
+      padding: 0;
+    }
+    li {
+      padding: 0rem;
+      a {
+        font-size: 1.2rem;
+      }
+    }
+    .social {
+      padding-top:1rem;
+    }
+  }
+}
+
+#home #main-nav .navbar .logo {
+  display:none;
+}
+
+//header
+#main-header {
+  height: 19rem;
+  background: $main-color;
+  .container{
+    padding-bottom:0;
+  }
+
+  .showcase {
+    padding-top:0rem;
+    background: $main-img no-repeat center center/cover;
+    height: 12rem;
+    width:100%;
+  }
+
+}
+
+
+//Sections 
+
+#section {
+   &-a,&-b {
+     height: 70vh;
+     .section-container {
+      grid-template-columns: repeat(1,1fr);
+       height: 100%;
+       
+       img {
+        margin-top:0;
+        height:25vh;
+        width: 100vw;
+       }
+       .section-content {
+        height:40vh;
+        padding: 0 1.5rem;
+        justify-content: center;
+        h2 {
+         text-align: center;
+         padding-top: 0rem ;
+         font-size:2.5rem;
+       }
+       p {
+         padding: 0;
+         margin:0;
+         font-size:1.2rem;
+       }
+       }
+       
+     }
+   }
+  }
+
+   #section-b {
+    height:90vh;
+     .section-container {
+       grid-template-areas:
+       'img'
+       'txt';
+       align-items: center;
+     }
+     div :nth-child(2){
+       grid-area: img;
+       height:100%;
+       align-items: center;
+     }
+     .section-content {
+       grid-area: txt;
+       height: 4vh, !important;;
+       p {height:auto !important;}
+     }
+   }
+  
+
+   //social
+  .social-container {
+    grid-template-columns: repeat(1,1fr);
+    .section.section-social .section-container{
+      grid-template-columns: repeat(1,1fr);
+      .section-content{
+        width:100vw;
+        img{
+          max-width:60%;
+        }
+      }
+    }
+    .youtube{background:$main-color}
+   .spotify{background:$secondary-color}
+   .whatsapp{background: $main-color !important;}
+   .instagram{background:$secondary-color !important}
+  }
+
+  //eventi
+
+  #eventi .items{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  //articoli
+
+.showcase-article {margin-top:1rem;}
+.showcase-container .showcase-content {
+
+h1 {
+  font-size: 2rem;
+}
+p{font-size:1.5rem;
+padding:1rem;}
+.btn{
+  font-size:1.5rem;
+}
+}
+
+
+.grid-container{
+  grid-template-columns: repeat(1,1fr);
+}
+
+//singoli articoli
+
+.article-container {
+  grid-template-columns: repeat(1,1fr);
+  padding-bottom:0;
+  padding-top:0;
+  div:nth-child(1){
+    a{font-size:1.2rem;}
+    p{font-size:1rem;}
+    img{max-width:50%;}
+  }
+  div:nth-child(2){
+    p{
+      font-size:1.2rem;
+    }
+    h3{
+      text-align: center;
+    }
+    img{height:25vh}
+  }
+}
+
+.article 
+.title{
+  padding:0;
+  padding-bottom:1rem;
+  font-size:1.5rem;
+}
+
+.container{
+  padding:0;
+ .grid-container{padding:0;margin:0;
+.grid-article{
+  height:15vh;
+  margin-left:0.5rem;
+  img {height:100%;}
+  .article-content{
+    h2{font-size:1.2rem;}
+    p{font-size:1.1rem;}
+  }
+}} 
+}
+
+
+
+//contatti
+#contatti {
+  .fa-youtube {padding-right:0;}
+}
+#contact-a .container{
+  max-width:80%;
+  .bottom-line {width:80%;}
+form{
+ padding:0;
+ margin:0;
+ align-items:center;
+ justify-content: center;
+}}
+
+#contact-a .text-fields {
+  display: grid;
+  width:100%;
+  grid-template-areas: 'name name'
+  'email email'
+ 'subject subject'
+ 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1rem; }
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  #contact-a .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  #contact-a .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contatti #contact-b .container .contact-info {
+  grid-template-columns: repeat(1,1fr);
+  grid-gap:1.5rem;
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+ margin:0;
+ align-items:center;
+ justify-content: center;
+  h3{
+    font-size:1.5rem;
+  }
+  p{
+    font-size:1.5rem;
+  }
+}
+}
+
+
+
+
+
+
+
+

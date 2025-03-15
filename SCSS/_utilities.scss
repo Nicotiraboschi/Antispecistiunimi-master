@@ -1,0 +1,140 @@
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.current {
+  border-bottom: 2px solid #fff;
+}
+
+i {
+  color:white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+%btn-shared {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border:none;
+  font-size: 1.5rem;
+  font-weight:bold;
+  text-align:center;
+  display: inline-block;
+  
+}
+
+.btn {
+  &:hover {
+    opacity:0.8;
+  }
+  &-light {
+    @extend %btn-shared;
+    background: #fff;
+    color: #333;
+  }
+  &-dark {
+    @extend %btn-shared;
+    background: #333;
+    color: $main-color;
+  }
+  &-secondary{
+    @extend %btn-shared;
+    background:#1e1e14;
+    color: $secondary-color;
+  }
+  &-primary{
+    @extend %btn-shared;
+    background:white;
+    color: $main-color;  
+}
+  &-about{
+    @extend %btn-shared;
+    background:white;
+    color:#ce87ad;  
+}
+}
+
+.bg-primary{
+background: $main-color;
+}
+.bg-secondary{
+background: $secondary-color;
+}
+.bg-third {
+  background:$third-color;
+}
+.bg-light{
+background: white;
+color:#333;
+}
+.bg-dark{
+background: #333;
+color:white;
+}
+.bg-darkish{
+  background:#464646;
+  color:white;
+}
+
+.p1 {padding: 1rem;}
+.p2 {padding: 2rem;}
+.p3 {padding: 3rem;}
+.p4 {padding: 4rem;}
+.p5 {padding: 5rem;}
+
+.py1 {padding: 1rem 0}
+.py2 {padding: 2rem 0}
+.py3 {padding: 3rem 0}
+.py4 {padding: 4rem 0}
+.py5 {padding: 5rem 0}
+
+.px1 {padding: 0 1rem;}
+.px2 {padding: 0 2rem;}
+.px3 {padding: 0 3rem;}
+.px4 {padding: 0 4rem;}
+.px5 {padding: 0 5rem;}
+
+.m1 {margin: 1rem}
+.m2 {margin: 2rem}
+.m3 {margin: 3rem}
+.m4 {margin: 4rem}
+.m5 {margin: 5rem}
+
+.my1 {margin: 1rem 0}
+.my2 {margin: 2rem 0}
+.my3 {margin: 3rem 0}
+.my4 {margin: 4rem 0}
+.my5 {margin: 5rem 0}
+
+.mx1 {margin: 0 1rem;}
+.mx2 {margin: 0 2rem;}
+.mx3 {margin: 0 3rem;}
+.mx4 {margin: 0 4rem;}
+.mx5 {margin: 0 5rem;}
+
+.container {
+  margin: auto;
+  padding:1rem 0;
+  overflow: hidden;
+  max-width: $max-width;
+}
+
+.none{
+  display:none
+}

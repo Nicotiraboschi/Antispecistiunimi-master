@@ -1,0 +1,14 @@
+{
+  "name": "antispecistiunimi",
+  "version": "1.0.0",
+  "description": "Antispecistiunimi",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/ --no-source-map --style expanded dist/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}

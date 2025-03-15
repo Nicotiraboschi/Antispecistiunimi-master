@@ -1,0 +1,94 @@
+    .article {
+      .showcase-article{
+        .showcase-container{
+          .showcase-content{
+            h1{
+              transform:none;
+            }
+          }
+        }
+      }
+    }
+    .article-container {
+      display:grid;
+      grid-template-columns: 2fr 20fr 1fr;
+      grid-gap:2rem;
+      padding:2rem;
+      padding-top:4rem;
+      div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      div:nth-child(1){
+        text-align:center;
+        padding-top:1rem;
+        img{
+          object-fit: cover;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+        p{
+          font-size:.9rem;
+          
+        }
+      }
+      div:nth-child(2){
+        h3{
+          font-size:2rem;
+          padding-top:2rem;
+        }
+        p {
+          font-size: 1.3rem;
+          text-align:justify;
+        }
+        img{
+          height:50vh;
+          width:100%;
+          object-fit:cover;
+          padding:1rem 0 ;
+        }
+        .bigger {
+          margin-top:1rem;
+        }
+      }
+    }
+
+    .title{
+      font-size: 2rem;
+    }
+
+
+// energiavegan
+#energiavegan {
+  .showcase-article {
+    &:before{
+      background: url(../img/strong.jpg) no-repeat center center/cover;
+    }
+  }
+}
+// proteinenobili
+#proteinenobili {
+  .showcase-article {
+    &:before{
+      background: url(../img/nobili.jpg) no-repeat center center/cover;
+    }
+  }
+}
+//quanteproteine
+#quanteproteine{
+  .showcase-article {
+    &:before{
+      background: url(../img/doubt.jpg) no-repeat center center/cover;
+    }
+  }
+}
+//omega3
+#omega3 {
+  .showcase-article {
+    &:before{
+      background: url(../img/omega3.jpg) no-repeat center center/cover;
+    }
+  }
+}

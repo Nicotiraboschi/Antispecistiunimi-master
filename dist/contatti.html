@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contatti | AntispecistiUnimi</title>
+  </head>
+  <body id="contatti">
+    <!-- Navbar -->
+    <div class="container">
+      <nav id="main-nav">
+        <div class="navbar">
+          <img src="img/logo.jpg" alt="" class="logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventi.html">Eventi</a></li>
+            <li><a href="articoli.html">Articoli</a></li>
+            <li><a class="current" href="contatti.html">Contatti</a></li>
+          </ul>
+          <div class="social">
+            <a
+              href="https://www.instagram.com/antispecist3.unimi/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram fa-2x"></i></a
+            ><a
+              href="https://open.spotify.com/show/3T6BpMNQqswvxeXZHvD9fm"
+              target="_blank"
+              ><i class="fa-brands fa-spotify fa-2x"></i></a
+            ><a
+              href="https://www.youtube.com/@antispecistiunimi"
+              target="_blank">
+              <i class="fa-brands fa-youtube fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Scrivici!</h2>
+        <div class="bottom-line"></div>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Nome"
+              name="name" />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email"
+              name="email" />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Argomento"
+              name="subject" />
+
+            <textarea
+              class="text-input message-input"
+              placeholder="Messaggio"
+              name="message"></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary">Invia</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-secondary">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-5x bigger"></i>
+            <i class="fas fa-envelope fa-3x smaller"></i>
+            <h3>Email</h3>
+            <p>antispecistiunimi@gmail.com</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-instagram fa-5x bigger"></i>
+            <i class="fa-brands fa-instagram fa-3x smaller"></i>
+            <h3>Instagram</h3>
+            <p>@antispecist3unimi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <div id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Go vegan!</h1>
+      </div>
+    </div>
+  </body>
+</html>
